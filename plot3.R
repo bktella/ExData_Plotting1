@@ -11,14 +11,14 @@ png(filename = "plot3.png", width = 480, height = 480, units = "px", pointsize =
 ## creates and empty canvas (type = "n")
 plot(a1$newDate,a1$Sub_metering_1, type="n", ylab="Energy sub metering", xlab="")
 
-## adds Sub_metering_1 lines (type = "S") with col = "black"
-points(a1$newDate, a1$Sub_metering_1, type="S", col="black")
+## adds Sub_metering_1 lines (type = "l") with col = "black"
+points(a1$newDate, a1$Sub_metering_1, type="l", col="black")
 
-## adds Sub_metering_1 lines (type = "S") with col = "red"
-points(a1$newDate, a1$Sub_metering_2, type="S", col="red")
+## adds Sub_metering_1 lines (type = "l") with col = "red"
+points(a1$newDate, a1$Sub_metering_2, type="l", col="red")
 
-## adds Sub_metering_1 lines (type = "S") with col = "blue"
-points(a1$newDate, a1$Sub_metering_3, type="S", col="blue")
+## adds Sub_metering_1 lines (type = "l") with col = "blue"
+points(a1$newDate, a1$Sub_metering_3, type="l", col="blue")
 
 ## adds legend
 legend("topright", col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1)

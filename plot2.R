@@ -12,9 +12,9 @@ if (!exists("a1")) a1 <- readData()
 png(filename = "plot2.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "white") 
 
 ## plot Global Active Power vs the date/time
-## with type = stairstep (S)
+## with type = line
 ## y label = "Global Active Power (kilowatts)"
-plot(a1$newDate,a1$Global_active_power, type="S", ylab="Global Active Power (kilowatts)", xlab="")
+plot(a1$newDate,a1$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
 ## closes the png device
 dev.off()
